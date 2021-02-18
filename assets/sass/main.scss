@@ -1,0 +1,33 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+@import 'partials/main_navigation'; 
+@import 'partials/main_home'; 
+@import 'partials/main_aside';
+
+$color-azul-oscuro: rgb(23, 33, 54);
+$color-gris-claro: rgb(80, 88, 100);
+$color-azul-twitter: rgb(19, 160, 255);
+$color-gris-mas-claro: rgb(156, 156, 156);
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  margin: 0 12em 0 12em;
+  background-color: $color-azul-oscuro;
+  min-height: 600px;
+  color: white;
+  font-family: 'Source Sans Pro';
+  font-size: 1em;
+}
+.main_navigation,
+.main_home{
+  border-right: 1px solid $color-gris-claro;
+  height: 100%;
+}
+
+
+////

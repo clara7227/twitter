@@ -1,0 +1,38 @@
+$color-azul-oscuro: rgb(23, 33, 54);
+$color-gris-claro: rgb(80, 88, 100);
+$color-azul-twitter: rgb(19, 160, 255);
+
+.main_navigation {
+    display: flex;
+    padding: 0.5em;
+    .main_navigation_top {
+        max-width: 140px;
+        .fa {
+            margin: 0.3em 0 0.7em 0.2em;
+        }
+        nav {
+            @include margins();
+        }
+    }
+    .main_navigation_username {
+      align-self: flex-end; 
+      margin-left: -30px;
+    }
+}
+/*BOTON NUEVO TWEET*/
+.new_tweet_navigation {
+    background-color: $color-azul-twitter;
+    border-radius: 30px;
+    padding: .6em 1.9em 0.4em 1.9em;
+    color:white;
+    font-weight: bold;
+    position:inherit;
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 140px;
+    @include margins();
+    .fa {
+        padding-left: 0.4em;
+    }
+}
